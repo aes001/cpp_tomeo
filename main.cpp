@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
     std::vector<videoPlayer*> videos;
 
     if (argc == 2)
-        videos = readVideos(std::string(argv[1]));
+        // videos = readVideos(std::string(argv[1]));
+        videos = readVideos("../tomeo4/videos");
 
     if (videos.size() == 0) {
         QMessageBox::information(
