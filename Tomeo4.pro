@@ -1,6 +1,7 @@
 QT += core gui widgets multimedia multimediawidgets
 
 SOURCES += \
+    friendslist.cpp \
     homevideos.cpp \
     main.cpp \
     mainpagesviews.cpp \
@@ -12,6 +13,7 @@ SOURCES += \
 
 HEADERS += \
     constants.h \
+    friendslist.h \
     homevideos.h \
     mainpagesviews.h \
     mainwindow.h \
@@ -26,5 +28,6 @@ RESOURCES += \
     logos.qrc
 
 FORMS += \
+    friendslist.ui \
     mainwindow.ui \
     registerform.ui

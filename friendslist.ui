@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FriendsList</class>
+ <widget class="QWidget" name="FriendsList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>331</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>-2</number>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>329</width>
+      <height>649</height>
+     </rect>
+    </property>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>331</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Search friends</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>190</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Friend 2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>250</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Friend 3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>310</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string> Friend 4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>370</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Friend 5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>430</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Friend 6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>490</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Friend 7</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_9">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>130</y>
+       <width>181</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>90</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_10">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>190</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>90</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_15">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>250</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>90</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_14">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>310</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>90</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_13">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>370</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>90</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_12">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>430</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>90</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_11">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>490</y>
+       <width>180</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>90</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>130</y>
+       <width>181</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>Friend 1</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>30</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">
+       <normaloff>:/arrow.png</normaloff>:/arrow.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">:/profile_icon.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">:/profile_icon.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">:/profile_icon.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">:/profile_icon.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>370</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">:/profile_icon.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>430</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">:/profile_icon.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>490</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Downloads/Week 2/FriendListPrototype/icon.qrc">:/profile_icon.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>frame</zorder>
+    <zorder>frame_14</zorder>
+    <zorder>frame_11</zorder>
+    <zorder>frame_12</zorder>
+    <zorder>frame_13</zorder>
+    <zorder>frame_15</zorder>
+    <zorder>frame_10</zorder>
+    <zorder>frame_9</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>lineEdit_2</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>pushButton_5</zorder>
+    <zorder>pushButton_4</zorder>
+    <zorder>pushButton_3</zorder>
+    <zorder>pushButton_11</zorder>
+    <zorder>pushButton_10</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_6</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_7</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Downloads/Week 2/FriendListPrototype/icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
