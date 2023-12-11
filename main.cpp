@@ -22,15 +22,14 @@ int main(int argc, char *argv[])
 
     std::vector<videoPlayer*> videos;
 
-    if (argc == 2)
-        // videos = readVideos(std::string(argv[1]));
-        videos = readVideos("../tomeo4/videos");
+    // videos = readVideos(std::string(argv[1]));
+    videos = readVideos("../UI_tomeo/videos");
 
     if (videos.size() == 0) {
         QMessageBox::information(
             NULL,
             QString("Tomeo"),
-            QString("No videos found! Add command line argument to \"quoted\" file location."));
+            QString("No videos found! Please make sure there are videos in the path provided"));
         exit(-1);
     }
 
