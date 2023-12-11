@@ -41,7 +41,7 @@ std::vector<videoPlayer*> readVideos(std::string path, QWidget *parent){
             DEBUG_MSG("Found video: " << it.fileName())
 
 #else
-        if (file.contains(".mp4") || file.contains("MOV"))  { // mac/linux
+        if (file.contains(".mp4") || file.contains(".MOV") || file.contains(".mov"))  { // mac/linux
 #endif
             videoPlayer* v = new videoPlayer(QUrl::fromLocalFile(file), parent);
             videos.push_back(v);
