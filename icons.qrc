@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Assets/pause.png</file>
+        <file>Assets/play.png</file>
+        <file>Assets/record_video.png</file>
+        <file>Assets/arrow.png</file>
+        <file>Assets/profile_picture_placeholder.png</file>
+        <file>Assets/profile_icon.svg</file>
+        <file>Assets/friends.svg</file>
+        <file>Assets/friends_fancy.svg</file>
+        <file>Assets/record_video_dark.svg</file>
+    </qresource>
+</RCC>
