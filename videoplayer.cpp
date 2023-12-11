@@ -44,6 +44,7 @@ void videoPlayer::mousePressEvent(QMouseEvent *event){
 // Resize the video player to the aspect ratio of the video
 void videoPlayer::resizePlayer(){
     if (!resized){ // Only resize once
+        DEBUG_MSG("Resizing video player for: " << videoUrl << "")
         if(player->isMetaDataAvailable()){ // Ensure metadata is available
             QVariant resolution = player->metaData("Resolution");
             if (resolution.isValid()){ // Ensure metadata is valid
@@ -60,11 +61,11 @@ void videoPlayer::resizePlayer(){
                 resized = true; // Don't resize again
                 emit windowResized(); // Tell the player to play the video
             } else {
-                qDebug() << "Resize failed: Invalid metadata.\n Skipping Video.";
+                qDebug() << "Resize failed: Invalid metadata.\nSkipping Video.\n";
                 // exit(-1);
             }
         } else {
-            qDebug() << "Resize failed: Unavailable metadata.\n Skipping video.";
+            qDebug() << "Resize failed: Unavailable metadata.\nSkipping video.\n";
             // exit(-1);
         }
     }
