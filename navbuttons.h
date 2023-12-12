@@ -8,15 +8,30 @@
 #include <QPixmap>
 #include <QMouseEvent>
 #include "constants.h"
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QPushButton>
 
-class navButtons: public QLabel
+class navButtons: public QWidget
 {
     Q_OBJECT
 public:
-    navButtons(QUrl iconURL, int width_size_ratio, QWidget *parent = nullptr);
+    navButtons(QWidget *parent = nullptr);
 
 private:
-    QUrl iconURL;
+    QPushButton *myProfileButtonContainer;
+    QPushButton *recordVideoButtonContainer;
+    QPushButton *myFriendsButtonContainer;
+
+signals:
+    void myProfileButtonClicked();
+    void recordVideoButtonClicked();
+    void myFriendsButtonClicked();
+
+public slots:
+    void myProfileButtonClickedSlot();
+    void recordVideoButtonClickedSlot();
+    void myFriendsButtonClickedSlot();
 };
 
 #endif // NAVBUTTONS_H

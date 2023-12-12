@@ -12,3 +12,10 @@ FriendsList::~FriendsList()
 {
     delete ui;
 }
+
+void FriendsList::on_backButton_clicked()
+{
+    DEBUG_MSG("FriendsList: Back button clicked")
+    emit backButtonClicked();
+}
+

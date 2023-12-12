@@ -1,9 +1,11 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+#include <QDebug>
+
 // Do not change
-// Some design mishap and miscommunication has made this changing this
-// constant result in a broken UI. Please do not change this constant.
+// Some design mishap and miscommunication has made changing these constants
+// result in a broken UI. Please do not change these constants.
 #define APP_WIDTH 400 // Old size: 878/2
 #define APP_HEIGHT 710 // Old size: 1792
 

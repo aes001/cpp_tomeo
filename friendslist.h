@@ -2,6 +2,7 @@
 #define FRIENDSLIST_H
 
 #include <QWidget>
+#include "constants.h"
 
 namespace Ui {
 class FriendsList;
@@ -17,6 +18,12 @@ public:
 
 private:
     Ui::FriendsList *ui;
+
+signals:
+    void backButtonClicked();
+
+private slots:
+    void on_backButton_clicked();
 };
 
 #endif // FRIENDSLIST_H

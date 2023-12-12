@@ -2,6 +2,8 @@
 #define FRIENDPROFILE_H
 
 #include <QMainWindow>
+#include <QFileInfo>
+#include "constants.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,5 +21,11 @@ public:
 
 private:
     Ui::FriendProfile *ui;
+
+signals:
+    void backButtonClicked();
+
+public slots:
+    void on_backButton_clicked();
 };
 #endif // FRIENDPROFILE_H
