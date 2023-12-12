@@ -26,7 +26,7 @@ std::vector<videoPlayer*> readVideos(std::string path, QWidget *parent){
     // Check if the path is relative or absolute
     if(checkFile.isRelative()){
         DEBUG_MSG("Path is relative. Using canonical path: " << checkFile.canonicalFilePath() << " instead of " << QString::fromStdString(path) << ".")
-        dir = QDir(checkFile.canonicalFilePath()); //Have to do this for some reason or it won't work with relative paths
+        dir = QDir(checkFile.canonicalFilePath()); // Have to do this for some reason or it won't work with relative paths
     } else {
         DEBUG_MSG("Path is absolute. Using path: " << QString::fromStdString(path))
         dir = QDir(QString::fromStdString(path)); // We just use the path as is if it's already absolute

@@ -9,5 +9,16 @@
         <file>Assets/friends.svg</file>
         <file>Assets/friends_fancy.svg</file>
         <file>Assets/record_video_dark.svg</file>
+        <file>Assets/kevinHeart.png</file>
+        <file>Assets/profilePic.png</file>
+        <file>Assets/freindProfile3.png</file>
+        <file>Assets/friendProfile1.png</file>
+        <file>Assets/friendProfile2.png</file>
+        <file>Assets/videoThumbnail1.jpg</file>
+        <file>Assets/videoThumbnail2.jpg</file>
+        <file>Assets/videoThumbnail3.jpg</file>
+        <file>Assets/thumbnail_k01.jpg</file>
+        <file>Assets/thumbnail_k02.jpg</file>
+        <file>Assets/thumbnail_k03.jpg</file>
     </qresource>
 </RCC>
