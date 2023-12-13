@@ -66,6 +66,7 @@ FriendProfile::FriendProfile(QWidget *parent)
 
 
     connect(ui->backButton, &QPushButton::clicked, this, &FriendProfile::on_backButton_clicked);
+    connect(ui->logOutButton, &QPushButton::clicked, this, &FriendProfile::on_logoutButton_clicked);
 }
 FriendProfile::~FriendProfile()
 {
@@ -76,4 +77,10 @@ void FriendProfile::on_backButton_clicked()
 {
     DEBUG_MSG("FriendProfile: Back button clicked\n")
     emit backButtonClicked();
+}
+
+void FriendProfile::on_logoutButton_clicked()
+{
+    DEBUG_MSG("FriendProfile: Logout button clicked\n")
+    emit logoutButtonClicked();
 }

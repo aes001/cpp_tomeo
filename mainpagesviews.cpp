@@ -30,6 +30,7 @@ mainPagesViews::mainPagesViews(QWidget *parent) : QStackedWidget(parent)
     profilePage->setMinimumSize(APP_WIDTH, APP_HEIGHT);
 
     connect(homePage, SIGNAL(myProfileClicked()), this, SLOT(on_myProfileClicked()));
+    connect(profilePage, SIGNAL(logoutButtonClicked()), this, SLOT(on_logoutClicked()));
     connect(profilePage, SIGNAL(backButtonClicked()), this, SLOT(on_loginClicked()));
 
     this->addWidget(profilePage);
@@ -43,6 +44,23 @@ mainPagesViews::mainPagesViews(QWidget *parent) : QStackedWidget(parent)
     connect(friendsListPage, SIGNAL(backButtonClicked()), this, SLOT(on_loginClicked()));
 
     this->addWidget(friendsListPage);
+
+    // Add the record video page
+    recordVideo *recordVideoPage = new recordVideo();
+    recordVideoPage->setMaximumSize(APP_WIDTH, APP_HEIGHT);
+    recordVideoPage->setMinimumSize(APP_WIDTH, APP_HEIGHT);
+
+    connect(homePage, SIGNAL(recordVideoClicked()), this, SLOT(on_recordVideoClicked()));
+    connect(recordVideoPage, SIGNAL(backButtonClicked()), this, SLOT(on_loginClicked()));
+
+    this->addWidget(recordVideoPage);
+
+
+}
+
+void mainPagesViews::on_logoutClicked()
+{
+    this->setCurrentIndex(0);
 }
 
 void mainPagesViews::on_loginClicked()
@@ -58,4 +76,9 @@ void mainPagesViews::on_myProfileClicked()
 void mainPagesViews::on_friendsListClicked()
 {
     this->setCurrentIndex(3);
+}
+
+void mainPagesViews::on_recordVideoClicked()
+{
+    this->setCurrentIndex(4);
 }

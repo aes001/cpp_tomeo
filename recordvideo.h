@@ -2,6 +2,7 @@
 #define RECORDVIDEO_H
 
 #include <QWidget>
+#include "constants.h"
 
 namespace Ui {
 class recordVideo;
@@ -17,6 +18,12 @@ public:
 
 private:
     Ui::recordVideo *ui;
+
+signals:
+    void backButtonClicked();
+
+private slots:
+    void on_backButton_clicked();
 };
 
 #endif // RECORDVIDEO_H

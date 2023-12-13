@@ -9,7 +9,10 @@
 #include <iostream>
 #include <cmath>
 #include "constants.h"
-
+#include <QVBoxLayout>
+#include <QPushButton>
+#include <QLabel>
+#include <QIcon>
 
 /**
  * A video player widget that can be added to a layout
