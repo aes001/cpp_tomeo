@@ -1,9 +1,7 @@
 #include "friendprofile.h"
 #include "ui_friendprofile.h"
 
-FriendProfile::FriendProfile(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::FriendProfile)
+FriendProfile::FriendProfile(QWidget *parent) : QMainWindow(parent), ui(new Ui::FriendProfile)
 {
     ui->setupUi(this);
 
@@ -68,6 +66,7 @@ FriendProfile::FriendProfile(QWidget *parent)
     connect(ui->backButton, &QPushButton::clicked, this, &FriendProfile::on_backButton_clicked);
     connect(ui->logOutButton, &QPushButton::clicked, this, &FriendProfile::on_logoutButton_clicked);
 }
+
 FriendProfile::~FriendProfile()
 {
     delete ui;

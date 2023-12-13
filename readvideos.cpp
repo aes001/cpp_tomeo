@@ -9,7 +9,8 @@
  *
  * Note: If you don't pass in a parent you will have to set the parent to each player later with setParent()
  */
-std::vector<videoPlayer*> readVideos(std::string path, QWidget *parent){
+std::vector<videoPlayer*> readVideos(std::string path, QWidget *parent)
+{
     std::vector<videoPlayer*> videos = std::vector<videoPlayer*>(); // empty vector
 
     // Check if the directory exists

@@ -3,28 +3,19 @@
 #include <QMessageBox>
 
 
-RegisterForm::RegisterForm(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::RegisterForm)
-{
+RegisterForm::RegisterForm(QWidget *parent) : QDialog(parent), ui(new Ui::RegisterForm){
     ui->setupUi(this);
 }
 
-RegisterForm::~RegisterForm()
-{
+RegisterForm::~RegisterForm(){
     delete ui;
 }
 
-
-
-void RegisterForm::on_loginBtn_clicked()
-{
+void RegisterForm::on_loginBtn_clicked(){
    this->close(); // This will close the RegisterForm dialog
 }
 
-
-void RegisterForm::on_ConfirmRegBtn_clicked()
-{
+void RegisterForm::on_ConfirmRegBtn_clicked(){
    QString username = ui->usernameEntry1->text();
    QString password = ui->passentry1->text();
    QString confirmPassword = ui->confirm_pass1->text();
@@ -46,10 +37,7 @@ void RegisterForm::on_ConfirmRegBtn_clicked()
    QMessageBox::information(this, "Registration", "Registration successful.", QMessageBox::Ok);
 }
 
-
-
-void RegisterForm::on_privacy_clicked()
-{
+void RegisterForm::on_privacy_clicked(){
     QMessageBox::information(this, "Privacy Policy", "This shows the privacy policy", QMessageBox::Ok);
 }
 
