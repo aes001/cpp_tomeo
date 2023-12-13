@@ -51,7 +51,7 @@ navButtons::navButtons(QWidget *parent): QWidget(parent)
     QLabel *recordVideoButton = new QLabel(this);
     recordVideoButtonLabel->setAlignment(Qt::AlignHCenter);
     recordVideoButtonLabel->setContentsMargins(0, 0, 0, 0);
-    pic = QPixmap(":/Assets/record_video_dark.svg");
+    pic = QPixmap(":/Assets/record_cam_button.svg");
     pic = pic.scaled(APP_WIDTH/8, APP_WIDTH/8, Qt::KeepAspectRatio, Qt::SmoothTransformation);
     recordVideoButton->setPixmap(pic);
     recordVideoButton->setAlignment(Qt::AlignCenter);

@@ -22,5 +22,7 @@
         <file>Assets/thumbnail_k03.jpg</file>
         <file>Assets/flash.svg</file>
         <file>Assets/CameraFlip.svg</file>
+        <file>Assets/record_cam_button.svg</file>
+        <file>Assets/logout_button.svg</file>
     </qresource>
 </RCC>

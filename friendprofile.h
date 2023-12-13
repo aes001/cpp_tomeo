@@ -24,8 +24,10 @@ private:
 
 signals:
     void backButtonClicked();
+    void logoutButtonClicked();
 
 public slots:
     void on_backButton_clicked();
+    void on_logoutButton_clicked();
 };
 #endif // FRIENDPROFILE_H

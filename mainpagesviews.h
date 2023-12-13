@@ -9,6 +9,7 @@
 #include "homevideos.h"
 #include "friendprofile.h"
 #include "friendslist.h"
+#include "recordvideo.h"
 
 
 // To Do: might be a good idea to make this a singleton
@@ -23,6 +24,8 @@ public slots:
     void on_loginClicked();
     void on_myProfileClicked();
     void on_friendsListClicked();
+    void on_recordVideoClicked();
+    void on_logoutClicked();
 };
 
 #endif // MAINPAGESVIEWS_H

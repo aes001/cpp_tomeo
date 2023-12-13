@@ -4,7 +4,7 @@ videoPlayer::videoPlayer(QUrl videoUrl, QWidget *parent) : QVideoWidget(parent),
     player = new QMediaPlayer;
     player->setVideoOutput(this);
     player->setMedia(videoUrl);
-    player->setVolume(0);
+    player->setVolume(100);
 
     // Wait for the video to load and then we can resize the player
     // QT Loads the video asynchronously, so we need to wait for it to load before we can resize the player

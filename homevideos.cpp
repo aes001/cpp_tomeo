@@ -33,9 +33,10 @@ homeVideos::homeVideos(QWidget *parent) : QWidget(parent)
     layout->setContentsMargins(0, 0, 0, 0);
 
     QLabel *header = new QLabel("My Videos", this);
-    header->setStyleSheet("background-color: rgba(0, 0, 0, 0);");
+    header->setStyleSheet("background-color: transparent;"); // Supposed to make the background transparent, but it doesn't work
+    header->setAttribute(Qt::WA_TranslucentBackground); // Also doesn't work
     QFont font = header->font();
-    font.setPointSize(18);
+    font.setPointSize(12);
     font.setBold(true);
     header->setFont(font);
     header->setAlignment(Qt::AlignHCenter);
@@ -50,7 +51,7 @@ homeVideos::homeVideos(QWidget *parent) : QWidget(parent)
         QLabel *videoName = new QLabel(videos.at(i)->getVideoName(), this);
         QFont videoNameFont = videoName->font();
         videoNameFont.setPointSize(10);
-        videoNameFont.setBold(true);
+        videoNameFont.setBold(false);
         videoName->setFont(videoNameFont);
 
         // Cretae a horizontal layout for the video name so we can add a little space before it
@@ -77,7 +78,11 @@ homeVideos::homeVideos(QWidget *parent) : QWidget(parent)
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setContentsMargins(0, 0, 0, 0);
+    QSpacerItem *headerTopSpacer = new QSpacerItem(0, 6, QSizePolicy::Minimum, QSizePolicy::Minimum);
+    mainLayout->addItem(headerTopSpacer);
     mainLayout->addWidget(header);
+    QSpacerItem *headerBottomSpacer = new QSpacerItem(0, 3, QSizePolicy::Minimum, QSizePolicy::Minimum);
+    mainLayout->addItem(headerBottomSpacer);
     mainLayout->addWidget(scrollArea);
     mainLayout->addWidget(navButtonsBar);
 
@@ -99,6 +104,7 @@ void homeVideos::myProfileClickedSlot()
 
 void homeVideos::recordVideoClickedSlot()
 {
+    DEBUG_MSG("homeVideos: Detected recordVideoClickedSlot")
     emit recordVideoClicked();
 }
 
