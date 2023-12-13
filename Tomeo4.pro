@@ -9,6 +9,7 @@ SOURCES += \
     mainwindow.cpp \
     navbuttons.cpp \
     readvideos.cpp \
+    recordvideo.cpp \
     registerform.cpp \
     videoplayer.cpp
 
@@ -21,6 +22,7 @@ HEADERS += \
     mainwindow.h \
     navbuttons.h \
     readvideos.h \
+    recordvideo.h \
     registerform.h \
     videoplayer.h \
 
@@ -32,4 +34,5 @@ FORMS += \
     friendslist.ui \
     friendprofile.ui \
     mainwindow.ui \
+    recordvideo.ui \
     registerform.ui

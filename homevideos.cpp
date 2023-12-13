@@ -4,10 +4,11 @@ homeVideos::homeVideos(QWidget *parent) : QWidget(parent)
 {
     std::vector<videoPlayer*> videos;
 
-    // Uncomment the line below this comment to pass in videos from the command line and then comment out the line below it.
+    // Uncomment the line below to pass in videos from the command line and then comment out the line below it.
     // videos = readVideos(std::string(argv[1]));
     videos = readVideos("../UI_tomeo/videos");
 
+    // If we have no videos, error and exit
     if (videos.size() == 0) {
         QMessageBox::information(NULL, QString("Tomeo"), QString("No videos found! Please make sure there are videos in the path provided"));
         exit(-1);

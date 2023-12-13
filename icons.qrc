@@ -20,5 +20,7 @@
         <file>Assets/thumbnail_k01.jpg</file>
         <file>Assets/thumbnail_k02.jpg</file>
         <file>Assets/thumbnail_k03.jpg</file>
+        <file>Assets/flash.svg</file>
+        <file>Assets/CameraFlip.svg</file>
     </qresource>
 </RCC>
