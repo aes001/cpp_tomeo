@@ -29,7 +29,9 @@ int main(int argc, char *argv[])
     // For debugging purposes
     int currentStackIndex = theWindow->currentIndex();
     QString currentStackIndexString = QString::number(currentStackIndex);
-    qDebug() << "Window: " << currentStackIndexString;
+    DEBUG_MSG("Current Window: " << currentStackIndexString)
+    DEBUG_MSG("Current Working Directory: " << QDir::currentPath())
+
 
     return a.exec();
 }

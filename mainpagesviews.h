@@ -7,7 +7,7 @@
 #include "constants.h"
 #include "mainwindow.h"
 #include "homevideos.h"
-#include "friendProfile.h"
+#include "friendprofile.h"
 #include "friendslist.h"
 
 
