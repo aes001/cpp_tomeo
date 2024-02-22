@@ -1,6 +1,5 @@
-# Tomeo
-
-BeReal-like app prototype for videos
+# Tomeo, C++ BeReal-like app prototype for videos
+This is a C++ prototype of a BeReal like app for sharing videos with your friends.
 
 ## Prerequisite
 1. QT Creator
